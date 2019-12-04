@@ -1,0 +1,259 @@
+.main {
+	width: 1000px;
+	margin: auto;
+	height: 3000px;
+	background-color: beige;
+	z-index: 10;
+}
+body{
+	background-color: #E6E6E6;
+}
+.top {
+	width: 1000px;
+	height: 80px;
+	background: white;
+}
+
+.top h1 {
+	display: inline-block;
+	width: 300px;
+	height: 70px;
+	font-weight: 900;
+	font-size: 35px;
+	margin-left: 5%;
+}
+
+.链接 {
+	float: right;
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+}
+
+.链接 li {
+	float: left;
+}
+
+.链接 li:hover {
+	transform: scale(1.05);
+}
+
+.链接 li a {
+	display: block;
+	width: 80px;
+	line-height: 70px;
+	font-weight: 500;
+	text-align: center;
+}
+.topimg{
+	float: left;
+	display: block;
+	position: relative;
+	top:20px;
+}
+.topp{
+	float: left;
+}
+a:link {
+	text-decoration: none;
+	color: azure;
+}
+
+a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: orange;
+	background: #F0F0F0;
+}
+.left{
+	position: relative;
+	top: 25px;
+	float: left;
+	width: 150px;
+	height: 800px;
+
+	
+}
+.mid{
+	float: left;
+	width: 600px;
+	height: 1000px;
+
+}
+.right{
+	float: right;
+	width: 230px;
+	height: 800px;
+
+}
+.leftul{
+	list-style: none;
+}
+.leftul li a {
+	display: block;
+	width: 100px;
+	line-height: 50px;
+	font-weight: 500;
+	text-align: center;
+	font-size: 15px;
+}
+#input{
+	height: 200px;
+	width: 600px;
+	background: white;
+}
+#input1{
+	margin-left: 8px;
+}
+.midd{
+	background: white;
+	height: 40px;
+}
+.midd ul{list-style: none; position: relative; top: 10px; }
+.midd li{
+	float: left;
+}
+.midd li a{
+	display: block;
+	width: 60px;
+	text-align: center;
+}
+#midput{
+	float: right;
+	font-size: 10px;
+	position: relative;
+	top: 13px;
+	right: 5px;
+	z-index: 0;
+}
+#img搜索{
+	position: relative;
+	right: 30px;
+	z-index: 1;
+	float: right;
+	
+}
+.mid1{
+	margin-top: 20px;
+	background-color: white;
+	height: 350px;
+	width: 100%;
+}
+.mid2{
+	margin-top: 20px;
+	background-color: white;
+	height: 350px;
+	width: 100%;
+}
+.个人{
+	background: white;
+	width: 100%;
+	height: 210px;
+}
+#头像{
+	margin-left: 60px;
+}
+#头像 img{
+	position: relative;
+	top: 10px;
+	border-radius: 200px;
+}
+.广告{
+	margin-top: 20px;
+	background: white;
+	width: 100%;
+	height: 140px;
+}
+.校园头条{
+	margin-top: 60px;
+	background: white;
+	width: 100%;
+	height: 565px;
+}
+#昵称{
+	position: relative;
+	left: 85px;
+}
+#图1{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128202822.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+#图2{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128201659.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+#图3{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128202831.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+#图4{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128205450.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+#图5{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128205454.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+#图6{
+	float: left;
+	width: 180px;
+	height: 138px;
+	background-image: url(../img1/TIM图片20191128205458.jpg);
+	background-size: cover;
+	margin-left: 15px;
+}
+.校园头条{
+	font-size: 15px;
+	font-weight: bold;
+}
+#资讯h3{
+	position: relative;
+	top: 20px;
+	left: 30px;
+	margin-bottom: 40px;
+	color: #17A2B8;
+	font-size: 25px;
+}
+html {
+    cursor: url('./menghuan.ico'), auto;
+}
+.draw {
+    position: fixed;
+    width: 1px;
+    line-height: 1px;
+    pointer-events: none;
+}
+@keyframes floatOne {
+0% {
+opacity:1;
+}
+50% {
+opacity:1;
+}
+100% {
+opacity:0;
+transform:translate3D(0, -20px, 0) scale(5) rotate(45deg);
+}
+}

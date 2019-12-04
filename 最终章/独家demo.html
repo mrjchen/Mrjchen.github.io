@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>demo</title>
+		<link rel="stylesheet" type="text/css" href="css/demo2.css"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="apple-mobile-web-app-title" content="Color Draw">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style>
+	
+		
+		
+		.holder{overflow:hidden;width:230px;height:182px;float:left;position:relative;background-color: #8C8C8C;/* margin-right:1px; */}
+		.holder .image{position:absolute;/* left:-100px; */}
+		.holder span{background-color:#333;font-size:27px;color:#dedede;font-weight:700;padding:4px;position:absolute;top:120px;left:4px;}
+		.holder .text{/* padding:20px; */display:none;line-height:26px;position:absolute;top:80px;left:40px; font-size:30px;color:#fff;width:230px;}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('.holder').hover(function(){
+				$(this).removeClass('.notactive');	
+				$('.notactive').stop().animate({'width':'290px'},400); 
+				$(this).find('img').stop().animate({'top':'-165px'},400); 
+				$(this).stop().animate({'width':'230px'},400); 
+				$(this).find('span').css({'background-color':'#000'}); 
+				$(this).find('.text').fadeIn(300); 
+			},function(){
+				$('.notactive').stop().animate({'width':'230px'},400); 
+				$(this).addClass('.notactive');	
+				$(this).find('.text').hide();
+				$(this).find('img').stop().animate({'top':'0px'},500); 
+				$(this).stop().animate({'width':'230px'},400);
+				$(this).find('span').css({'background-color':'#333', 'color':'#dedede'}); 
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				<h1>独家记忆</h1>
+				<ul class="链接">
+					<li>
+						
+						<a><img class="topimg" src="img1/TIM图片20191128001453.png"/><div class="topp">主页</div></a></li>
+					<li>
+						
+						<a><img class="topimg" src="img1/TIM图片20191128001318.jpg"><div class="topp">发现</div></a></li>
+					<li>
+						<a><img class="topimg" src="img1/TIM图片20191128001322.png"><div class="topp">个人</div></a></li>
+						
+					<li><img class="topimg" src="img1/TIM图片20191127234421.png" >
+				</ul>
+			</div>
+			<div class="left">
+				<ul class="leftul">
+					<li>
+						<a>独家记忆官网</a>
+					</li>
+					<li>
+						<a>首页</a>
+					</li>
+					<li>
+						<a>我的记忆</a>
+					</li>
+					<li>
+						<a>我的留言</a>
+					</li>
+					<li>
+						<a>我的个人主页</a>
+					</li>
+					<li>
+						<a>发现</a>
+					</li>
+					<li>
+						<a>我的收藏</a>
+					</li>
+					<li>
+						<a>设置</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mid">
+				<div id="input" >
+					<img src="img1/TIM图片20191128015216.png" />
+					<div id="input1"><textarea rows="7" cols="80">
+					</textarea></div>
+					<img src="img1/TIM图片20191128015730.png" />
+					
+				</div>
+				<div class="midd">
+					<ul class="midul">
+						<li>
+							<a>心情</a>
+						</li>
+						<li>
+							<a>风景</a>
+						</li>
+						<li>
+							<a>留言</a>
+						</li>
+						<li>
+							<a>趣闻</a>
+						</li>
+					</ul>
+					<div id="midput">
+						发现故事
+						<input size="20" />
+					</div>
+					<!-- <img id="img搜索" src="img1/TIM图片20191128113359.png" /> -->
+				</div>
+				<div class="mid1">
+					<img src="img1/TIM图片20191128194346.png" />
+					<h3>&nbsp&nbsp#南苑足球场</h3>
+					<p>
+						&nbsp&nbsp&nbsp&nbsp组织部大家庭在这里拍摄部门视频，没有无人机，就把手机丢到空中拍摄<br />
+						&nbsp&nbsp&nbsp&nbsp惊险刺激又充满欢声笑语
+					</p>
+					<div id="图1"></div>
+					<div id="图2"></div>
+					<div id="图3"></div>
+				</div>
+				<div class="mid2">
+					<img src="img1/TIM图片20191128202057.png" />
+					<h3>&nbsp&nbsp#计算机中心六楼</h3>
+					<p>
+						&nbsp&nbsp 在计算机中心上了一天的课，可爱JAVA李老师给我们看《咱们裸熊》<br>
+						&nbsp&nbsp&nbsp&nbspweb要答辩了，小紧张，图中隐约可以看到李老师的帅气
+					</p>
+					<div id="图4"></div>
+					<div id="图5"></div>
+					<div id="图6"></div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="个人">
+					<div id="头像"><img src="img1/TIM图片20191128151455.jpg"></div>
+					<div id="信息">
+						<p id="昵称">琛先森</p>
+						<h4>&nbsp  &nbsp &nbsp  &nbsp &nbsp  作品 &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp 留言</h4>
+					</div>
+				</div>
+				<div class="广告">
+					<!-- <img src="img1/TIM图片20191128173425.jpg" /> -->
+					<div class="holder notactive">
+							<img class="image" src="img1/TIM图片20191128173425.jpg" height=""/>
+							
+							<div class="text">广告位招租</div>
+					</div>
+				</div>
+				<div class="校园头条">
+					<h3 id="资讯h3">校园资讯</h3>
+					<ul class="资讯">
+						<li>
+							<p>coindance席卷湘大社团</p>
+						</li>
+						<li>
+							<p>评委考试高分</p>
+						</li>
+						<li>
+							<p>李老师帅气过人</p>
+						</li>
+						<li>
+							<p>我校被授予创新创业50强高校</p>
+						</li>
+						<li>
+							<p>“山海”三院联合新生晚会</p>
+						</li>
+						<li>
+							<p>四六级考试来袭</p>
+						</li>
+						<li>
+							<p>震惊！自习室半夜竟……</p>
+						</li>
+						<li>
+							<p>关于举办第九届“百灵鸟”杯英语辩论</p>
+						</li>
+						<li>
+							<p>独家记忆提醒你多喝热水</p>
+						</li>
+						<li>
+							<p>关于下学期选课安排通知</p>
+						</li>
+						<li>
+							<p>独家记忆提醒你多喝热水</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min3.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

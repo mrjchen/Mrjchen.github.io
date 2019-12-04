@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+
+
+
+
+.infoCon { padding: 20px 0px; overflow: hidden; clear: both; display: block; zoom: 1; width:1002px; margin:0 auto }
+.qitem { text-align: center; background: url(../images/bg.jpg) no-repeat; margin: 10px 15px 5px 0px; width: 233px; height: 211px; overflow: hidden; float: left; position: relative; cursor: pointer; align-content: center; }
+.qitem img { border: 0px currentColor; position: absolute; z-index: 200; }
+.qitem .caption { color: rgb(204, 204, 204); display: block; position: absolute; z-index: 0;  padding: 30px 0px 0px 33px; align-content: center;}
+.qitem .caption p { margin: 0px; padding:0px 0px 0px 0px; line-height: 30px; font-size: 20px; align-content: center;}
+#teshu p { padding: 13px 10px 0px 15px; line-height: 40px;  font-size: 30px;}
+#teshu2 p { padding: 0px 0px 0px 0px;}
+.topLeft { float: left; position: absolute; background-repeat: no-repeat; }
+.topRight { float: left; position: absolute; background-repeat: no-repeat; }
+.bottomLeft { float: left; position: absolute; background-repeat: no-repeat; }
+.bottomRight { float: left; position: absolute; background-repeat: no-repeat; }
+.topLeft { background-position: left top; }
+.topRight { background-position: right top; }
+.bottomLeft { background-position: left bottom; }
+.bottomRight { background-position: right bottom; }

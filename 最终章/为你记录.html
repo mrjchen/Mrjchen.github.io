@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>为你记录</title>
+		<meta name="description" content="Blueprint: On Scroll Effect Layout" />
+		<meta name="keywords" content="on scroll, effect, slide in, layout, template, transition, javascript" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		:root {
+		  --bg-color: seagreen;
+		  --primary-clr: white;
+		  --secondary-clr: black;
+		  --base-ff: 'Source Sans Pro', sans-serif;
+		  --h2-fs: 2.25rem;
+		  --pad: 2rem;
+		}
+		
+		* {
+		  box-sizing: border-box;
+		}
+		
+		.grid {
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: center;
+		  justify-content: center;
+		  margin: 0 auto;
+		  min-height: 100vh;
+		  font-family: var(--base-ff);
+		}
+		.grid__item {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  flex: 100%;
+		  width: 50vw;
+		  height: 50vh;
+		  padding: var(--pad);
+		  background-color: var(--bg-color);
+		}
+		@media (min-width: 600px) {
+		  .grid__item {
+		    flex: 1 0 50%;
+		  }
+		}
+		.grid__item:nth-child(even) {
+		  background-color: #36a265;
+		}
+		.grid__item:nth-child(3n) {
+		  background-color: #2b8352;
+		}
+		.grid__item:nth-child(4n) {
+		  background-color: #38aa6a;
+		}
+		.grid__item:nth-child(5n) {
+		  background-color: #267449;
+		}
+		
+		h2 {
+		  font-size: var(--h2-fs);
+		  text-align: center;
+		  color: var(--primary-clr);
+		}
+		p{
+			font-size: var(--h2-fs);
+			text-align: center;
+			color: var(--primary-clr);
+		}
+		.letter-wrap {
+		  display: inline-block;
+		  position: relative;
+		}
+		
+		.letter-wrap * {
+		  pointer-events: none;
+		}
+		
+		.letter-wrap__word {
+		  display: inline-flex;
+		  position: relative;
+		  overflow: hidden;
+		}
+		
+		.letter-wrap__char {
+		  display: inline-block;
+		  position: relative;
+		  text-transform: uppercase;
+		}
+		.letter-wrap__char-inner {
+		  display: inline-block;
+		}
+		.letter-wrap__char-inner:after {
+		  content: attr(data-letter);
+		  position: absolute;
+		  top: 100%;
+		  left: 0;
+		  color: var(--secondary-clr);
+		}
+		</style>
+		</head>
+	</head>
+	<body>
+		<script src="js/TweenMax.min.js"></script>
+		<div class="container">
+			<header class="clearfix">
+				<h1>你可以在校园每个角落分享</h1>
+			</header>	
+			<div id="cbp-so-scroller" class="cbp-so-scroller">
+				<section class="cbp-so-section">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2 class="letter-wrap" data-duration="0.4" data-stagger="0.1">你的每一次风景</h2>
+						<p class="letter-wrap" data-duration="0.4" data-stagger="0.1">Fruitcake toffee jujubes. Topping biscuit sesame snaps jelly caramels jujubes tiramisu fruitcake. Marzipan tart lemon drops chocolate sesame snaps jelly beans.</p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="img1/TIM图片20191127122849.jpg" alt="img01">
+					</figure>
+				</section>
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="img1/TIM图片20191127122030.jpg" alt="img01">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2 class="letter-wrap" data-duration="0.4" data-stagger="0.1">每一次触动</h2>
+						<p class="letter-wrap" data-duration="0.4" data-stagger="0.1">Lollipop powder danish sugar plum caramels liquorice sweet cookie. Gummi bears caramels gummi bears candy canes cheesecake sweet roll icing dragée. Gummies jelly-o tart. Cheesecake unerdwear.com candy canes apple pie halvah chocolate tiramisu.</p>
+					</article>
+				</section>
+				<section class="cbp-so-section">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2 class="letter-wrap" data-duration="0.4" data-stagger="0.1">每一次趣事</h2>
+						<p class="letter-wrap" data-duration="0.4" data-stagger="0.1">Soufflé bonbon jelly cotton candy liquorice dessert jelly bear claw candy canes. Pudding halvah bonbon marzipan powder. Marzipan gingerbread sweet jelly.</p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="img1/TIM图片20191127122110.jpg" alt="img01">
+					</figure>
+				</section>
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="img1/TIM图片20191127122859.jpg" alt="img01">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2 class="letter-wrap" data-duration="0.4" data-stagger="0.1">每一次回忆</h2>
+						<p class="letter-wrap" data-duration="0.4" data-stagger="0.1">Sesame snaps sweet wafer danish. Chupa chups carrot cake icing donut halvah bonbon. Chocolate cake candy marshmallow pudding dessert marzipan jujubes sugar plum.</p>
+					</article>
+				</section>
+				<!-- <section class="cbp-so-section">
+					<article class="cbp-so-side cbp-so-side-left">
+						<h2>Pudding lollipop</h2>
+						<p>Chupa chups pudding lollipop gummi bears gummies cupcake pie. Cookie cotton candy caramels. Oat cake dessert applicake. Sweet roll tiramisu sweet roll sweet roll.</p>
+					</article>
+					<figure class="cbp-so-side cbp-so-side-right">
+						<img src="images/5.png" alt="img01">
+					</figure>
+				</section>
+				<section class="cbp-so-section">
+					<figure class="cbp-so-side cbp-so-side-left">
+						<img src="images/6.png" alt="img01">
+					</figure>
+					<article class="cbp-so-side cbp-so-side-right">
+						<h2>Soufflé bonbon</h2>
+						<p>Cake cotton candy lollipop. Cake croissant cheesecake candy sugar plum icing apple pie wafer. Pie sugar plum tiramisu tiramisu pie fruitcake candy icing. Candy icing gummies gummies cheesecake brownie lemon drops chocolate gingerbread.</p>
+					</article>
+				</section> -->
+			</div>
+		</div>
+		<script>
+		const letterWrapClass = 'letter-wrap';
+		const letterWrapElements = document.getElementsByClassName(letterWrapClass);
+		
+		[...letterWrapElements].forEach(el => {
+		  letterWrap(el, letterWrapClass);
+		  letterAnimation(el, letterWrapClass);
+		});
+		
+		
+		
+		function letterWrap(el, cls) {
+		  const words = el.textContent.split(' ');
+		  const letters = [];
+		  
+		  cls = cls || 'letter-wrap'
+		  
+		  words.forEach(word => {
+		    let html = '';
+		    for (var letter in word) {
+		      html += `
+		        <span class="${cls}__char">
+		          <span class="${cls}__char-inner" data-letter="${word[letter]}">
+		            ${word[letter]}
+		          </span>
+		        </span>
+		      `;
+		    };
+		    
+		    let wrappedWords = `<span class="${cls}__word">${html}</span>`;
+		    letters.push(wrappedWords);
+		  });
+		  
+		  return el.innerHTML = letters.join(' ');
+		}
+		
+		function letterAnimation(el, cls) {
+		  const tl = new TimelineMax({ paused: true });
+		  const characters = el.querySelectorAll(`.${cls}__char-inner`);
+		  const duration = el.hasAttribute('data-duration') ? el.dataset.duration : 0.3;
+		  const stagger = el.hasAttribute('data-stagger') ? el.dataset.stagger : 0.03;
+		  
+		  el.animation = tl.staggerTo(characters, duration, {
+		    y: '-100%',
+		    ease: Power4.easeOut
+		  }, stagger);
+		      
+		  el.addEventListener('mouseenter', (event) => event.currentTarget.animation.play());
+		  el.addEventListener('mouseout', (event) => el.animation.reverse());
+		}
+		</script>
+		<script src="js/classie.js"></script>
+		<script src="js/cbpScroller.js"></script>
+		<script>
+			new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+		</script>
+	</body>
+</html>
