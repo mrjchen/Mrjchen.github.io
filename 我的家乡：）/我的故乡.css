@@ -1,0 +1,146 @@
+body{
+	background-image: url(img1/TIM图片20191027101002.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+	}
+	.top{
+		
+		background-image: url(img1/W020160302512713550223.jpg);
+		background-size: cover;
+		top:0px;
+		padding-top: 25px;
+		width: 876px;
+		height: 120px;
+		position: fixed;
+		left: 17%;
+		align-content: center;
+		margin: 0px;
+		z-index: 3;
+	}
+	.mid{
+		border-radius: 20px;
+		background: inherit;
+		filter: blur(4px);
+		margin: auto;
+		width: 1015px;
+		height: 2400px;
+		border: black solid 2px;
+		position: absolute;
+		
+		left: 12%;
+		z-index: 1;
+	}
+	.lit{
+		border-radius: 20px;
+		background-color: antiquewhite;
+		width: 876px;
+		height: 2400px;
+		z-index: 2;
+		position: absolute;
+		top:145px;
+		left: 17%;
+		
+	}
+a:link {
+				text-decoration: none;
+				color: azure;
+				}
+			
+a:visited {
+			color: orange;
+		}
+			
+a:hover {
+			color: orange;
+		}
+
+.toph1{
+	 display: block;
+	 margin-left: 100px;
+	 font-size: 40px;
+	 font-family: "宋体";
+	 color: gold;
+}
+.链接 {
+				list-style: none;
+				font-size: 25px;
+			}
+			
+		.链接 li {
+				float: left;
+			}
+		.链接 li:hover{
+				transform: scale(1.05);
+			}
+		.链接 li a {
+				display: block;
+				width: 150px;
+				line-height: 70px;
+				font-weight: 900;
+				text-align: center;
+			}
+			.h11{
+				margin: 35px;
+				text-align: center;
+				font-family: "宋体";
+			}
+			.main{
+
+				border-radius: 10px;
+				border: black dotted 2px;
+				margin: 15px;
+				height: 300px;
+			}
+			.main img{
+				display: inline-block;
+				height: 240px;
+				border-radius: 10px;
+				transition: all 0.8s;
+				margin: 10px;
+			}
+			.main img:hover{
+				transform: translateX(-8px);
+			}
+			.main span{
+				margin: 7px;
+				display: inline-block;
+				width: 500px;
+				height: auto;
+				font-size: 15px;	
+				    float: right;
+				text-align: center;
+			}
+			.t1{
+				width: 46px;
+				height: 228px;
+				padding: 5px;
+			}
+			.t2{
+				width: 398;
+				height: 228;
+			}
+			.t3{
+				width: 265;
+				height: 228;
+			}
+			.t3 img{
+				height: 218px;
+			}
+			.hh{
+				margin: 35px;
+				color: dimgrey;
+				font-family: "宋体";
+				transform: scale(1.08);
+			}
+			.main2{
+				align-content: center;
+				width: auto;
+			}
+			.w:hover{
+					transform: scale(1.05);
+				
+			}
+			#mainmain{
+				width: 1366px;
+				margin: auto;
+			}
